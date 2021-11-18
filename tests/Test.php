@@ -1,12 +1,12 @@
 <?php
 
- // Autoload files using Composer autoload
+// Autoload files using Composer autoload
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Mtabe\Stantanizer;
+use Mtabe\Santanizer;
 
 $query = "update users set last_name = 'last name' WHERE first_name = '#P{name}' AND id = '#P{id}'";
 
-$response = Stantanizer::sanitize($query);
+$response = Santanizer::sanitize($query);
 
 echo $response;
