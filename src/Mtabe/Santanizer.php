@@ -34,7 +34,7 @@ class Santanizer
 
   private static function queryHasDestructiveWords($query)
   {
-    if (preg_match_all('/(insert|update\b|drop|delete\b|truncate|add|create|insert|constraint|set)/i', $query, $matches)) {
+    if (preg_match_all('/(insert|update\b|drop|delete\b|truncate|add|create|replace|insert|commit|grant\b|constraint|set)/i', $query, $matches)) {
       $badWords = array_pop($matches);
       throw new \Exception(MESSAGE_ERROR_DESTRUCTIVE_WORDS . " \n" . join("\r\n", $badWords));
     } else {
