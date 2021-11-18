@@ -1,0 +1,19 @@
+{
+    "name": "mtabe/santanizer",
+    "description": "Clean up sql query submited from form",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mtabe\\Santanizer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zachariah Ngonyani",
+            "email": "zachariahn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
